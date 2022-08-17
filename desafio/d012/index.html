@@ -31,7 +31,7 @@
         }
         header > h1{
             padding-top: 50px;
-            font-size: 4vw;
+            font-size: 5vw;
             font-variant: small-caps;
             font-family: 'Passion One', cursive;
         }
@@ -61,18 +61,25 @@
         section.img{
             background-color: rgb(119, 118, 118);
             color: white;
+            box-shadow: inset 6px 6px 13px 0px rgb(43, 42, 42);
+            background-attachment: fixed;
         }
         section.img > p{
-            background-color: rgb(51, 51, 51);
+            background-color: rgba(51, 51, 51, 0.712);
             display: inline-block;
             padding: 5px;
+            text-shadow: 1px 1px 0px black;
+        }
+        section p{
+            padding-bottom: 1em;
         }
         #img1{
             /* height: 48vh; */
             background-image: url('imagens/background001.jpg');
             background-repeat: no-repeat;
-            background-position: center center;
+            background-position: right center;
             /* background-size: 700px; */
+            background-size: cover;
         }
         #img2{
             /* height: 48vh; */
@@ -80,6 +87,7 @@
             background-repeat: no-repeat;
             background-position: center center;
             /* background-size: 700px; */
+            background-size: cover;
         }
         footer{
             background-color: black;
@@ -94,6 +102,9 @@
            section{
                 font-size: 5vw;
            }
+           section.img > p{
+            
+        }
         }
     </style>
 </head>
