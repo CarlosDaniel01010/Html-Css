@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cordel Moderno</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
         
         *{
             margin: 0px;
@@ -23,7 +23,6 @@
         }
         body p{
             /* margin: 25px; */
-            font-size: 15pt;
         }
         header{
             background: black;
@@ -32,8 +31,8 @@
         }
         header > h1{
             padding-top: 50px;
+            font-size: 4vw;
             font-variant: small-caps;
-            font-size: 30pt; 
             font-family: 'Passion One', cursive;
         }
         header p {
@@ -51,7 +50,9 @@
             padding-top: 10vh;
             padding-bottom: 10vh;
             line-height: 2em;
+            font-size: 2vw;
             padding-left: 30px;
+            font-family: 'Sriracha', cursive;
         }
         section.normal{
             background-color: white;
@@ -63,20 +64,36 @@
         }
         section.img > p{
             background-color: rgb(51, 51, 51);
-            width: 400px;
+            display: inline-block;
+            padding: 5px;
         }
-        .img{
-            height: 48vh;
+        #img1{
+            /* height: 48vh; */
             background-image: url('imagens/background001.jpg');
             background-repeat: no-repeat;
             background-position: center center;
-            background-size: 700px;
+            /* background-size: 700px; */
+        }
+        #img2{
+            /* height: 48vh; */
+            background-image: url('imagens/background002.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* background-size: 700px; */
         }
         footer{
             background-color: black;
             text-align: center;
             color: white;
             padding: 10px;
+        }
+        @media screen and (max-width: 768px) {
+           header h1{
+                font-size: 50pt;
+           }
+           section{
+                font-size: 5vw;
+           }
         }
     </style>
 </head>
@@ -98,7 +115,7 @@
             </p>
         </section>
 
-        <section class="img">
+        <section class="img" id="img1">
             
             <p class="white">
                 Não é mais como era antes <br>
@@ -134,7 +151,7 @@
                 Decifre esse rabisco.
             </p>
         </section>
-        <section class="img">
+        <section class="img" id="img2">
             <p>
                 Tenho saudade das cartas <br>
                 Escritas com a própria mão <br>
